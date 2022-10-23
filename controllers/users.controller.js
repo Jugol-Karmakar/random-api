@@ -1,6 +1,8 @@
 const users = require("../models/user.json");
 const { readFile, writeFile } = require("fs").promises;
 
+//get random user
+
 module.exports.getRandomUser = async (req, res, next) => {
   const index = Math.floor(Math.random() * 10);
   const randomUser = users[index];
