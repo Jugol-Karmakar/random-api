@@ -38,7 +38,7 @@ module.exports.updateUsers = async (req, res, next) => {
   res.status(200).json({ success: true, data: users });
 };
 
-// Deleting a user
+// Delete a user
 module.exports.deleteUser = async (req, res, next) => {
   try {
     // Getting the ID from URL parameter

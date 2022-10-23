@@ -3,6 +3,8 @@ const usersControllers = require("../../controllers/users.controller");
 
 const router = express.Router();
 
+//user route
+
 router.route("/random").get(usersControllers.getRandomUser);
 router.route("/all").get(usersControllers.getAllUsers);
 router.route("/save").post(usersControllers.saveRandomUser);
